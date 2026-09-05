@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olive &amp; Ash — Kitchen and Bar</title>
+<meta name="description" content="Seasonal cooking over fire, a short menu that changes every week, and a bar that stays open late. Book a table at Olive &amp; Ash.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Karla:ital,wght@0,300..700;1,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" id="siteHead">
+  <div class="head-inner">
+    <a class="wordmark" href="#top">
+      <span class="wordmark-a">Olive</span><span class="amp">&amp;</span><span class="wordmark-b">Ash</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#rooms">The rooms</a>
+      <a href="#visit">Visit</a>
+      <a class="nav-book" href="#book">Book a table</a>
+    </nav>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ───────────────────────── hero ───────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <img src="img/hero.jpg" alt="" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="hero-body">
+      <p class="eyebrow reveal" style="--d:0ms">Est. 2019 · Seasonal · Fire</p>
+      <h1 class="hero-title">
+        <span class="reveal" style="--d:90ms">Everything</span>
+        <span class="reveal" style="--d:200ms"><em class="ital">good</em> starts</span>
+        <span class="reveal" style="--d:310ms">at the table.</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:520ms">
+        A short menu that changes with the market, cooked over embers.
+        Twelve tables, one long bar, and no rush to leave.
+      </p>
+      <div class="hero-cta reveal" style="--d:620ms">
+        <a class="btn btn-solid" href="#book">Book a table</a>
+        <a class="btn btn-ghost" href="#menu">Read the menu</a>
+      </div>
+      <div class="status reveal" style="--d:720ms" id="status" hidden>
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText"></span>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ───────────────────────── marquee ───────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Wood-fired flatbread</span><i>✦</i>
+      <span>Day-boat fish</span><i>✦</i>
+      <span>Aged sirloin, bone marrow</span><i>✦</i>
+      <span>Burnt honey cheesecake</span><i>✦</i>
+      <span>Natural wine</span><i>✦</i>
+      <span>Wood-fired flatbread</span><i>✦</i>
+      <span>Day-boat fish</span><i>✦</i>
+      <span>Aged sirloin, bone marrow</span><i>✦</i>
+      <span>Burnt honey cheesecake</span><i>✦</i>
+      <span>Natural wine</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ───────────────────────── story ───────────────────────── -->
+  <section class="story" id="story">
+    <div class="story-grid">
+      <div class="story-art">
+        <figure class="art-tall reveal-up">
+          <img src="img/story-1.jpg" alt="Vegetables cooking over open flame on the grill" loading="lazy" decoding="async">
+        </figure>
+        <figure class="art-small reveal-up" style="--d:140ms">
+          <img src="img/story-2.jpg" alt="Knives, pans and spices laid out on the prep bench" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <div class="story-text">
+        <p class="section-mark">01 — Our story</p>
+        <h2 class="h2">We buy what looks best that morning, then work out dinner.</h2>
+        <p>
+          There is no fixed menu here because there is no fixed market. Whatever the growers
+          and the boats have on the day is what the kitchen builds around, and the board is
+          rewritten by four o'clock.
+        </p>
+        <p>
+          It makes for a smaller list than most places, and occasionally we run out of
+          the thing you came for. We think that is a fair trade.
+        </p>
+        <blockquote class="pull">
+          <p>Ten ingredients, treated properly, beats forty treated carelessly.</p>
+          <cite>Marta Oyelaran, Head Chef</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── menu ───────────────────────── -->
+  <section class="menu" id="menu">
+    <div class="menu-head">
+      <p class="section-mark light">02 — This week</p>
+      <h2 class="h2 light">The board</h2>
+      <p class="menu-note">
+        Written fresh each Tuesday. Ask about the off-menu cut — there is usually one.
+      </p>
+    </div>
+
+    <div class="menu-cols">
+      <div class="menu-col">
+        <h3 class="menu-cat">Small</h3>
+        <ul class="dishes">
+          <li>
+            <span class="d-name">Flatbread, smoked butter, wild garlic</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">9</span>
+            <span class="d-desc">Fermented three days, straight off the stone.</span>
+          </li>
+          <li>
+            <span class="d-name">Hand-cut beef, cured egg yolk, capers</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">16</span>
+            <span class="d-desc">Chopped to order, dressed with aged sherry vinegar.</span>
+          </li>
+          <li>
+            <span class="d-name">Charred leeks, hazelnut, sheep's curd</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">12</span>
+            <span class="d-desc">Burnt in the embers, peeled back to the sweet centre.</span>
+          </li>
+          <li>
+            <span class="d-name">Oysters, mignonette, rye</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">4<em>ea</em></span>
+            <span class="d-desc">From the west coast beds, shucked at the bar.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-col">
+        <h3 class="menu-cat">Large</h3>
+        <ul class="dishes">
+          <li>
+            <span class="d-name">Day-boat fish, brown butter, sea herbs</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">28</span>
+            <span class="d-desc">Whatever landed this morning — ask your waiter.</span>
+          </li>
+          <li>
+            <span class="d-name">Aged sirloin for two, bone marrow, chips</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">62</span>
+            <span class="d-desc">Forty days on the bone. Rested twenty minutes.</span>
+          </li>
+          <li>
+            <span class="d-name">Ember-roast squash, brown rice, chilli</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">21</span>
+            <span class="d-desc">Vegan. Genuinely the dish, not the afterthought.</span>
+          </li>
+          <li>
+            <span class="d-name">Burnt honey cheesecake</span>
+            <span class="d-dots" aria-hidden="true"></span>
+            <span class="d-price">10</span>
+            <span class="d-desc">One size. It does not travel — eat it here.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-foot">
+      <a class="btn btn-line" href="#book">Reserve a table</a>
+      <p class="allergen">Full allergen information is on the printed menu and available from any of the team.</p>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── rooms / gallery ───────────────────────── -->
+  <section class="rooms" id="rooms">
+    <div class="rooms-head">
+      <p class="section-mark">03 — The rooms</p>
+      <h2 class="h2">A long bar, a low light, and a kitchen you can hear.</h2>
+    </div>
+
+    <div class="gallery">
+      <figure class="g g1 reveal-up"><img src="img/room-1.jpg" alt="The dining room in the evening" loading="lazy" decoding="async"></figure>
+      <figure class="g g2 reveal-up" style="--d:100ms"><img src="img/room-2.jpg" alt="The bar" loading="lazy" decoding="async"></figure>
+      <figure class="g g3 reveal-up" style="--d:200ms"><img src="img/room-3.jpg" alt="A table laid for dinner" loading="lazy" decoding="async"></figure>
+      <figure class="g g4 reveal-up" style="--d:300ms"><img src="img/room-4.jpg" alt="Detail of a dish" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── visit ───────────────────────── -->
+  <section class="visit" id="visit">
+    <div class="visit-grid">
+      <div class="hours-block">
+        <p class="section-mark light">04 — Visit</p>
+        <h2 class="h2 light">Opening hours</h2>
+        <table class="hours" id="hoursTable">
+          <caption class="sr-only">Opening hours by day</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr data-day="2"><th scope="row">Tuesday</th><td>5:00pm — 10:30pm</td></tr>
+            <tr data-day="3"><th scope="row">Wednesday</th><td>5:00pm — 10:30pm</td></tr>
+            <tr data-day="4"><th scope="row">Thursday</th><td>5:00pm — 10:30pm</td></tr>
+            <tr data-day="5"><th scope="row">Friday</th><td>12:00pm — 3:00pm &nbsp;·&nbsp; 5:00pm — 11:30pm</td></tr>
+            <tr data-day="6"><th scope="row">Saturday</th><td>12:00pm — 3:00pm &nbsp;·&nbsp; 5:00pm — 11:30pm</td></tr>
+            <tr data-day="0"><th scope="row">Sunday</th><td>12:00pm — 4:00pm</td></tr>
+          </tbody>
+        </table>
+
+        <div class="find">
+          <p><strong>Find us</strong><br>
+            42 Kiln Street, Riverside<br>
+            Open to the square, second door past the arch</p>
+          <p><strong>Talk to us</strong><br>
+            <a href="tel:+441234567890">+44 1234 567 890</a><br>
+            <a href="#book">hello@oliveandash.example</a></p>
+        </div>
+      </div>
+
+      <!-- ───────── booking form ───────── -->
+      <div class="book" id="book">
+        <h2 class="h3 light">Book a table</h2>
+        <p class="book-note">
+          Up to 6 online. For anything larger, or the whole room, send us a note and we
+          will call you back.
+        </p>
+
+        <form class="form" id="bookForm" novalidate>
+          <div class="row two">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <p class="err" data-for="f-name"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+              <p class="err" data-for="f-phone"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+            <p class="err" data-for="f-email"></p>
+          </div>
+
+          <div class="row three">
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date" required>
+              <p class="err" data-for="f-date"></p>
+            </div>
+            <div class="field">
+              <label for="f-time">Time</label>
+              <select id="f-time" name="time" required>
+                <option value="">—</option>
+              </select>
+              <p class="err" data-for="f-time"></p>
+            </div>
+            <div class="field">
+              <label for="f-guests">Guests</label>
+              <select id="f-guests" name="guests" required>
+                <option value="2" selected>2</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <p class="err" data-for="f-guests"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-notes">Anything we should know? <span class="opt">optional</span></label>
+            <textarea id="f-notes" name="notes" rows="2" placeholder="Allergies, a birthday, a pushchair…"></textarea>
+          </div>
+
+          <button class="btn btn-solid wide" type="submit" id="submitBtn">Request this table</button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <span class="wordmark big"><span class="wordmark-a">Olive</span><span class="amp">&amp;</span><span class="wordmark-b">Ash</span></span>
+      <p>Kitchen and bar. Seasonal cooking over fire.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#rooms">The rooms</a>
+      <a href="#visit">Visit</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="foot-social">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Newsletter">Newsletter</a>
+    </div>
+  </div>
+  <p class="foot-fine">
+    Design demonstration build. Restaurant name, copy and photography are placeholders —
+    all of it is swappable. Photography: Wikimedia Commons (CC0).
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
